@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote - Ge Seven Medica</title>
+  <link rel="icon" href="../Images/G7 logo BG rem.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- boostrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- css file -->
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    .quote-form {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../Images/G7 logo BG rem.png" alt="Logo Icon" style="width:24px; vertical-align:middle; margin-right:8px;">
+            GE<span> SEVEN</span> MEDICA
+        </div>
+        <div class="contact"><img src="https://img.icons8.com/?size=100&id=53439&format=png&color=228BE6" alt="call image" height="25px"> Call Us: <strong>+60 3-7865 7788</strong></div>
+      </header>
+    
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="request_quote.html">Request a Quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+  <!-- Request a Quote Form -->
+  <div class="quote-form">
+    <h2 class="text-center" style="color:green;">Request a Quote for Medical Supplies</h2>
+    <p>Fill out the form below to receive a custom quote for bulk medical supplies. We offer a variety of products including personal protective equipment (PPE), first-aid kits, and more.</p>
+    <form action="https://formsubmit.co/intdevop25@gmail.com" method="POST"> <!-- Replace with your form handler -->
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Number" required>
+      </div>
+      <div class="mb-3">
+        <label for="product" class="form-label">Products Interested In</label>
+        <select class="form-select" id="product" name="product" required>
+          <option value="">Select Product</option>
+          <option value="PPE Kits">PPE Kits</option>
+          <option value="First-Aid Kits">First-Aid Kits</option>
+          <option value="Medical Gloves">Medical Gloves</option>
+          <option value="Face Masks">Face Masks</option>
+          <option value="Surgical Gowns">Surgical Gowns</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="quantity" class="form-label">Quantity Required</label>
+        <input type="number" class="form-control" id="quantity" name="quantity" required>
+      </div>
+      <div class="mb-3">
+        <label for="details" class="form-label">Additional Details</label>
+        <textarea class="form-control" id="details" name="details" rows="4" placeholder="Provide any additional details or specifications for your order." required></textarea>
+      </div>
+
+
+
+      <!-- Hidden field to redirect users to a thank-you page after submission -->
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+    <!-- Hidden field to differentiate form type -->
+    <input type="hidden" name="form-type" value="Request a Quote">
+
+    <!-- Honeypot field for spam prevention (hidden field) -->
+    <input type="text" name="_honey" style="display:none">
+
+    <!-- Optional: Disable CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
+
+
+
+      <button type="submit" class="btn btn-primary">Request Quote</button>
+    </form>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    &copy; 2025 Ge Seven Medica - MediCare Supplies. All rights reserved.
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

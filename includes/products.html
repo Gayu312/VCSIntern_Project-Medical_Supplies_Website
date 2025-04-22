@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products Page - Ge Seven Medica</title>
+  <link rel="icon" href="../Images/G7 logo BG rem.png" type="image/png" />
+  <!-- boostrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- css file -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- AOS animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<style>
+
+.container {
+  padding-bottom: 100px; /* Give space for footer */
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* footer {
+  background-color: #0073e6;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+} */
+
+/* updated Footer styling */
+footer {
+  height: 100px; /* Example height */
+  background-color: #0073e6;
+  text-align: center;
+  padding: 20px;
+}
+
+/*  */
+
+
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.carousel img {
+  height: 400px;
+  object-fit: contain;
+}
+h4 {
+  border-left: 4px solid #0073e6;
+  padding-left: 10px;
+  margin-top: 40px;
+  color: green;
+}
+.card-body {
+  padding-top: 2px;
+  margin-bottom: 0px; /* Prevent shifting */
+}
+/* footer {
+  position: relative;
+  margin-top: 50px;
+  bottom: 0;
+  width: 100%;
+} */
+
+.card-body {
+  margin-bottom: 0 !important;
+}
+.carousel img {
+  margin-bottom: 0 !important;
+}
+.card-title{
+    color:#0073e6;
+}
+
+</style>
+<body>
+  <main>
+
+  <header>
+    <div class="logo">
+        <img src="../Images/G7 logo BG rem.png" alt="Logo Icon" style="width:24px; vertical-align:middle; margin-right:8px;">
+        GE<span> SEVEN</span> MEDICA
+    </div>
+    <div class="contact"><img src="https://img.icons8.com/?size=100&id=53439&format=png&color=228BE6" alt="call image" height="25px"> Call Us: <strong>+60 3-7865 7788</strong></div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="request_quote.html">Request a Quote</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+    
+  <h4 data-aos="fade-up">Furniture & Room Setup</h4>
+  <div class="container">
+    <div class="row">
+      <!-- First card -->
+      <div class="col-md-4">
+        <div class="card product-card shadow">
+          <!-- Carousel -->
+          <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Images/bed/bed1.jpg" class="d-block w-100" alt="Bed Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/bed/bed2.jpg" class="d-block w-100" alt="Bed Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/bed/bed3.jpg" class="d-block w-100" alt="Bed Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hospital Bed</h5>
+            <p>Adjustable and electric models available.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second card -->
+      <div class="col-md-4">
+        <div class="card product-card shadow">
+          <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Images/WheelChair/WC1.jpg" class="d-block w-100" alt="WheelChair Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/WheelChair/WC2.webp" class="d-block w-100" alt="WheelChair Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/WheelChair/WC3.bmp" class="d-block w-100" alt="WheelChair Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Wheel Chairs</h5>
+            <p>Comfort and flexible.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Third card -->
+      <div class="col-md-4">
+        <div class="card product-card shadow">
+          <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Images/iv-stand 1.webp" class="d-block w-100" alt="IV-stand Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/iv-stand 2.png" class="d-block w-100" alt="IV-stand Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/iv-stand 3.avif" class="d-block w-100" alt="IV-stand Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">IV Strands</h5>
+            <p>Hospital-grade stand with adjustable height.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- second row -->
+   <!-- SECOND ROW -->
+  <h4 data-aos="fade-up">Medical Instruments & Tools</h4>
+  <div class="container">
+    <div class="row">
+      <!-- First card -->
+      <div class="col-md-4">
+        <div class="card product-card shadow">
+          <!-- Carousel -->
+          <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Images/N-TM1.jpg" class="d-block w-100" alt="Thermometer 1">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/N-TM2.webp" class="d-block w-100" alt="Thermomete Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/D-TM2.jpeg" class="d-block w-100" alt="Thermomete Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Thermometer</h5>
+            <p>Designed for hospital-grade performance.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second card -->
+      <div class="col-md-4">
+        <div class="card product-card shadow">
+          <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Images/GM1.jpg" class="d-block w-100" alt="Glucometer Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/GM2.webp" class="d-block w-100" alt="Glucometer Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/GM3.jpg" class="d-block w-100" alt="Glucometer Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Glucometer</h5>
+            <p>Digital display for easy analysis. Accurate and portable glucose monitoring device.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Third card -->
+      <div class="col-md-4">
+        <div class="card product-card shadow">
+          <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Images/PB3.webp" class="d-block w-100" alt="Bed Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/PB2.jpg" class="d-block w-100" alt="Bed Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="../Images/PB5.webp" class="d-block w-100" alt="Bed Image 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">BP Monitoring</h5>
+            <p>Accurate Blood pressure moitoring manuale and electric.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+    <!-- Add more categories in same structure: -->
+    <!-- Medical Instruments & Tools, Sanitation & PPE, etc. -->
+  </section>
+  
+   </main>
+
+
+  <footer>
+    &copy; 2025 Ge Seven Medica - MediCare Supplies. All rights reserved.
+  </footer>
+
+
+  <!-- boostrap js link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <!-- AOS script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
