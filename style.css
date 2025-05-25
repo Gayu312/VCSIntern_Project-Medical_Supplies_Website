@@ -1,311 +1,342 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f9f9f9;
-}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
 
-header {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 10px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #0073e6;
-}
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0073e6;
+  }
 
-.logo span {
-  color: #28a745;
-}
+  .logo span {
+    color: #28a745;
+  }
 
-.contact {
-  font-size: 14px;
-  color: #444;
-}
+  .contact {
+    font-size: 14px;
+    color: #444;
+  }
 
-nav {
-  background-color: #0073e6;
-}
+  nav {
+    background-color: #0073e6;
+  }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  padding: 15px 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.products {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.products h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.products p {
-  color: #666;
-  margin-bottom: 30px;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.product-card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.product-card img {
-  width: 50px;
-  margin-bottom: 15px;
-}
-
-.product-card h3 {
-  font-size: 16px;
-  color: #0073e6;
-  margin-bottom: 10px;
-}
-
-footer {
-  background-color: #0073e6;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 50px;
-}
-
-
-footer .social-icons {
-  margin-bottom: 10px;
-}
-
-footer .social-icons a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  transition: color 0.3s;
-}
-
-footer .social-icons a:hover {
-  color: #ffcc00; /* or any accent color you like */
-}
-
-
-@media (max-width: 600px) {
   nav ul {
-    flex-direction: column;
-    text-align: center;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
   }
 
   nav ul li {
-    border-top: 1px solid #0060c0;
+    padding: 15px 20px;
   }
-}
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .products {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .products h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .products p {
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .product-card img {
+    width: 50px;
+    margin-bottom: 15px;
+  }
+
+  .product-card h3 {
+    font-size: 16px;
+    color: #0073e6;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+  }
+
+
+  footer .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  footer .social-icons a:hover {
+    color: #ffcc00; /* or any accent color you like */
+  }
+
+
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    nav ul li {
+      border-top: 1px solid #0060c0;
+    }
+  }
 
 
 
-.hero {
-  background-image: url('./Images/bakground_img.jpeg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 60vh; /* Reduced height for a tighter hero section */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  position: relative;
-  padding: 0 20px; /* Add padding for smaller screens */
-}
-
-/* Dark overlay */
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Slightly darker for better text contrast */
-  z-index: 1;
-}
-
-/* Content stays on top of the overlay */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-}
-
-/* Responsive text scaling */
-.hero-content h1, .hero-content p {
-  margin: 0;
-  padding: 10px 0;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
-.carousel-section .card {
-  transition: transform 0.3s ease;
-}
-.carousel-section .card:hover {
-  transform: scale(1.05);
-}
-
+  .hero {
+    background-image: url('./Images/bakground_img.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh; /* Reduced height for a tighter hero section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 0 20px; /* Add padding for smaller screens */
+  }
+  
+  /* Dark overlay */
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Slightly darker for better text contrast */
+    z-index: 1;
+  }
+  
+  /* Content stays on top of the overlay */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+  
+  /* Responsive text scaling */
+  .hero-content h1, .hero-content p {
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  .carousel-section .card {
+    transition: transform 0.3s ease;
+  }
+  .carousel-section .card:hover {
+    transform: scale(1.05);
+  }
+  
 /* carosel dots */
 .carousel-indicators [data-bs-target] {
-background-color: #333; /* dark color for visibility */
-width: 12px;
-height: 12px;
-border-radius: 50%;
-opacity: 0.7;
+  background-color: #333; /* dark color for visibility */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.7;
 }
 
 .carousel-indicators .active {
-opacity: 1;
+  opacity: 1;
 }
 
 
 /* card images height adjust: */
 
 .card {
-width: 18rem; /* Maintain consistent width */
-height: 25rem; /* Set a fixed height for uniformity */
-display: flex;
-flex-direction: column;
-justify-content: space-between; /* Ensures equal spacing */
+  width: 18rem; /* Maintain consistent width */
+  height: 25rem; /* Set a fixed height for uniformity */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures equal spacing */
 }
 
 .card-img-top {
-height: 200px; /* Adjust height based on your layout */
-width: 100%;
-object-fit: contain; /* Prevents cropping & ensures full image is visible */
+  height: 200px; /* Adjust height based on your layout */
+  width: 100%;
+  object-fit: contain; /* Prevents cropping & ensures full image is visible */
 }
 
 .card-body {
-flex-grow: 1; /* Ensures all card bodies fill evenly */
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
+  flex-grow: 1; /* Ensures all card bodies fill evenly */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
+
+.visitor-count{
+  justify-content: flex-end;
+  background-color: #0073e6;
+}
+
+
+/* scroll btn style */
+/* #scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 100;
+  display: none;
+  background-color: #007bff;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: opacity 0.3s;
+}
+#scrollTopBtn:hover {
+  background-color: #0056b3;
+} */
+
+
+
 
 
 /* Tablet view */
 @media (max-width: 768px) {
-header {
-  flex-direction: row;
-  align-items: flex-start;
-}
+  header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
-header .logo {
-  font-size: 20px;
-  flex: 1;
-}
+  header .logo {
+    font-size: 20px;
+    flex: 1;
+  }
 
-header .contact {
-  font-size: 14px;
-  flex: 1;
-  justify-content: flex-end;
-}
+  header .contact {
+    font-size: 14px;
+    flex: 1;
+    justify-content: flex-end;
+  }
 }
 
 /* Mobile view */
 @media (max-width: 480px) {
-header {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header .logo {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  header .contact {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header img {
+    width: 20px;
+    height: auto;
+  }
 }
 
-header .logo {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-header .contact {
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-}
-
-header img {
-  width: 20px;
-  height: auto;
-}
-}
 
 
-
-/* Default (Desktop View) already looks fine, no changes */
 
 /* Medium screens (Tablet) - Show 2 cards per slide */
 @media (max-width: 992px) {
-.carousel-item .d-flex {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
+  .carousel-item .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 
-.carousel-item .card {
-  flex: 0 0 calc(50% - 20px); /* 2 cards per row with spacing */
-  max-width: 100%;
-}
+  .carousel-item .card {
+    flex: 0 0 calc(50% - 20px); /* 2 cards per row with spacing */
+    max-width: 100%;
+  }
 }
 
 /* Small screens (Mobile) - Show 1 card per slide */
 @media (max-width: 576px) {
-.carousel-item .d-flex {
-  flex-direction: column;
-  align-items: center;
-}
+  .carousel-item .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.carousel-item .card {
-  width: 90%;
-  margin-bottom: 20px;
-}
+  .carousel-item .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-size: 1.5rem 1.5rem;
-}
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 1.5rem 1.5rem;
+  }
 }
 

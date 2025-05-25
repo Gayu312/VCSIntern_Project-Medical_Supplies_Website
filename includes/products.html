@@ -16,8 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <style>
-
-.container {
+.container { 
   padding-bottom: 100px; /* Give space for footer */
 }
 html, body {
@@ -31,23 +30,11 @@ main {
   flex: 1;
 }
 
-/* footer {
-  background-color: #0073e6;
-  text-align: center;
-  padding: 15px;
-  margin-top: auto;
-} */
-
-/* updated Footer styling */
-footer {
-  height: 100px; /* Example height */
-  background-color: #0073e6;
-  text-align: center;
-  padding: 20px;
-}
-
-/*  */
-
+.visitor-count {
+  display: flex;
+  justify-content: end;
+  font-weight: bold;
+} 
 
 .card {
   transition: transform 0.3s ease;
@@ -67,26 +54,16 @@ h4 {
 }
 .card-body {
   padding-top: 2px;
-  margin-bottom: 0px; /* Prevent shifting */
+  margin-bottom: 0px;
 }
-/* footer {
-  position: relative;
-  margin-top: 50px;
-  bottom: 0;
-  width: 100%;
-} */
-
-.card-body {
-  margin-bottom: 0 !important;
+.card-title {
+  color: #0073e6;
 }
 .carousel img {
   margin-bottom: 0 !important;
 }
-.card-title{
-    color:#0073e6;
-}
 
-/* updated */
+/* Responsive */
 @media (max-width: 768px) {
   .carousel img {
     height: 220px;
@@ -123,10 +100,47 @@ h4 {
     gap: 15px;
     margin-bottom: 10px;
   }
+
+  .nav-search input {
+    width: 120px;
+    margin-top: 10px;
+  }
 }
 
+/* Navbar + Search */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-search input {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  width: 180px;
+  margin-left: auto;
+  opacity: 1;
+}
+
+.nav-search input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #007bff;
+}
 
 </style>
+
 <body>
   <main>
 
@@ -145,9 +159,24 @@ h4 {
       <li><a href="products.html">Products</a></li>
       <li><a href="request_quote.html">Request a Quote</a></li>
       <li><a href="contact.html">Contact</a></li>
+
+
+        <!-- Search Bar -->
+      <div class="nav-search" style="position: relative; width: 250px; margin-left: 550px;">
+        <i class="fas fa-search" 
+          style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); color:blue;"></i>
+        <input type="text" 
+              id="searchInput" 
+              placeholder="Search products..." 
+              style="padding-left: 35px; height: 35px; width: 100%; box-sizing: border-box;" />
+      </div>
     </ul>
   </nav>
 
+  <!-- No Results Message (hidden by default) -->
+  <div id="noResultsMessage" class="text-center text-danger mt-3" style="display: none;">
+    <h3>No results found.</h3>
+  </div>
 
     
   <h4 data-aos="fade-up">Furniture & Room Setup</h4>
@@ -356,6 +385,11 @@ h4 {
       <a href="https://t.me/your_channel" target="_blank"><i class="fab fa-telegram-plane"></i></a>
     </div>
     &copy; 2025 Ge Seven Medica - MediCare Supplies. All rights reserved.
+    <!-- visitor count -->
+    <div class="visitor-count d-flex float-end">
+    <p style="color: yellow">Visitor Count:</p>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=20684717&style=0006&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" height="20px"/> 
+    </div>
   </footer>
 
 
@@ -366,5 +400,6 @@ h4 {
   <script>
     AOS.init();
   </script>
+  <script src="./products_script.js"></script>
 </body>
 </html>
